@@ -1,5 +1,5 @@
 # benchmarks
-Benchmarks COBOL, Java e Ruby on linux
+Instructions:
 
 **Login as root:**<br>
 su
