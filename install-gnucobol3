@@ -1,0 +1,16 @@
+apt-get install libgmp-dev
+apt-get install libdb-dev
+apt-get install libncurses5-dev libncursesw5-dev
+cd ~
+mkdir Downloads
+cd Downloads
+wget http://sourceforge.net/projects/open-cobol/files/gnu-cobol/3.0/gnucobol-3.0-rc1.tar.gz
+tar xvf gnucobol-3.0-rc1.tar.gz
+rm gnucobol-3.0-rc1.tar.gz
+cd gnucobol-3.0-rc1
+./configure
+make
+make install
+make test
+echo /usr/local/lib>> /etc/ld.so.conf.d/libc.conf
+ldconfig
