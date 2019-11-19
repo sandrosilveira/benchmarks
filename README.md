@@ -2,13 +2,18 @@
 Benchmarks COBOL, Java e Ruby on linux
 
 **Login as root:**<br>
-su<br>
+su
 
-**Download with permission:**<br>
-cd /usr/local/bin<br>
-wget https://raw.githubusercontent.com/sandrosilveira/benchmarks/master/benchmarks<br>
-chmod 777 /usr/local/bin/benchmarks<br>
+**Go to home directory:**<br>
+cd ~
+
+**Clone the repository**<br>
+git clone https://github.com/sandrosilveira/benchmarks.git
+
+**Change perms to run**<br>
+cd benchmarks<br>
+chmod 777 *
 
 **Run:**<br>
-benchmarks<br>
+./benchmarks
 
