@@ -10,10 +10,7 @@ cd ~
 **Clone the repository**<br>
 git clone https://github.com/sandrosilveira/benchmarks.git
 
-**Change perms to run**<br>
-cd benchmarks<br>
-chmod 777 *
-
 **Run:**<br>
+cd benchmarks<br>
 ./benchmarks
 
