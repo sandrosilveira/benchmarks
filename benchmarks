@@ -1,3 +1,13 @@
+cd /usr/local/bin
+wget https://raw.githubusercontent.com/sandrosilveira/benchmarks/master/install-gnucobol3
+wget https://raw.githubusercontent.com/sandrosilveira/benchmarks/master/install-ruby
+wget https://raw.githubusercontent.com/sandrosilveira/benchmarks/master/install-java8
+wget https://raw.githubusercontent.com/sandrosilveira/benchmarks/master/install-7zip
+wget https://raw.githubusercontent.com/sandrosilveira/benchmarks/master/install-cifs
+wget https://raw.githubusercontent.com/sandrosilveira/benchmarks/master/mountf
+wget https://raw.githubusercontent.com/sandrosilveira/benchmarks/master/preproc
+chmod 777 install* mountf preproc
+
 install-gnucobol3
 install-ruby
 install-java8
@@ -21,16 +31,22 @@ cobc -x -free telco.cbl
 cobc -x -free telcoloc.cbl
 javac jTelco.java
 
+echo "-------------------------------------------------------------------------------------------"
 echo "Running telcoloc.cbl..."
 ./telcoloc
+echo "-------------------------------------------------------------------------------------------"
 echo "Running telco.cbl..."
 ./telco
+echo "-------------------------------------------------------------------------------------------"
 echo "Running jTelco.java..."
 java jTelco
+echo "-------------------------------------------------------------------------------------------"
 echo "Running telco.rb"
 ruby telco.rb
+echo "-------------------------------------------------------------------------------------------"
 echo "Running find/count..."
 time grep -i 3.42 /tmp/TELCO.TXT | wc -l
+echo "-------------------------------------------------------------------------------------------"
 echo "Running 7za..."
 cd /tmp
 time 7za a zip.7z TELCO.TXT
