@@ -1,0 +1,3 @@
+mkdir /mnt/f
+chmod 777 /mnt/f
+mount -t cifs -o username=sandro //VC-FONTES-V2R2/F-VC-FONTES-V2R2 /mnt/f
