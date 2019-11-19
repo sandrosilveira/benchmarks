@@ -8,3 +8,22 @@ wget https://raw.githubusercontent.com/sandrosilveira/benchmarks/master/telcoloc
 wget https://raw.githubusercontent.com/sandrosilveira/benchmarks/master/jTelco.java
 wget https://raw.githubusercontent.com/sandrosilveira/benchmarks/master/jTelcoData.7z
 wget https://raw.githubusercontent.com/sandrosilveira/benchmarks/master/telco.rb
+7za x telcolocData.7z
+7za x jTelcoData.7z
+cobc -x -free telco.cbl
+cobc -x -free telcoloc.cbl
+javac jTelco.java
+
+echo "Running telcoloc.cbl..."
+./telcoloc
+echo "Running telco.cbl..."
+./telco
+echo "Running jTelco.java..."
+java jTelco
+echo "Running telco.rb"
+ruby telco.rb
+echo "Running find/count..."
+time grep -i 3.42 /tmp/TELCO.TXT | wc -l
+echo "Running 7za..."
+cd /tmp
+time 7za a zip.7z TELCO.TXT
