@@ -1,6 +1,12 @@
-apt-get install libgmp-dev
-apt-get install libdb-dev
-apt-get install libncurses5-dev libncursesw5-dev
+if [ -f /etc/debian_version ]; then
+   apt install libgmp-dev
+   apt install libdb-dev
+   apt install libncurses5-dev libncursesw5-dev
+else
+   yum install gmp-devel
+   yum install libdb-devel
+   yum install ncurses-devel
+fi
 cd ~
 mkdir Downloads
 cd Downloads

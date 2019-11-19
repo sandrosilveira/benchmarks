@@ -1,1 +1,5 @@
-apt install cifs-utils
+if [ -f /etc/debian_version ]; then
+   apt install cifs-utils
+else
+   dnf install cifs-utils
+fi

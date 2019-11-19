@@ -15,7 +15,7 @@ sumP = ZERO   # sum of prices
 sumB = ZERO   # sum of basic tax
 sumD = ZERO   # sum of 'distance' tax
 
-txt = File.open('c:\tmp\telco_ruby.txt', 'w')
+txt = File.open('telco_ruby.txt', 'w')
 f = open('expon180.1e6')
 #f = open('telco.test')
 txt.puts '  Time Rate | Price   Btax   Dtax  | Output'
@@ -48,12 +48,12 @@ while bytes = f.read(8)
     d = d.round(2, :down)
     sumD = sumD + d
   end
-  t = price + b + d 
+  t = price + b + d
 
-  txt.puts sprintf(" %5.0f   %s  | %5.2f  %5.2f  %5.2f  | %5.2f", n, ori, price, b, d, t) 
+  txt.puts sprintf(" %5.0f   %s  | %5.2f  %5.2f  %5.2f  | %5.2f", n, ori, price, b, d, t)
 end
 txt.puts '------------+----------------------+--------'
-txt.puts sprintf("   Totals:  | %5.2f  %5.2f  %5.2f  | %5.2f", sumP, sumB, sumD, (sumP + sumB + sumD)) 
+txt.puts sprintf("   Totals:  | %5.2f  %5.2f  %5.2f  | %5.2f", sumP, sumB, sumD, (sumP + sumB + sumD))
 
 txt.close
 f.close

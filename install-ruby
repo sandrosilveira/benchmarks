@@ -1,1 +1,5 @@
-apt install ruby
+if [ -f /etc/debian_version ]; then
+   apt install ruby
+else
+   dnf install ruby
+fi

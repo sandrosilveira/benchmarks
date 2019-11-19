@@ -1,1 +1,5 @@
-apt install p7zip-full
+if [ -f /etc/debian_version ]; then
+   apt install p7zip-full
+else
+   dnf install p7zip.x86_64
+fi

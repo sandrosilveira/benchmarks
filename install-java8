@@ -1,1 +1,5 @@
-apt install openjdk-8-jdk
+if [ -f /etc/debian_version ]; then
+   apt install openjdk-8-jdk
+else
+   dnf install java-1.8.0-openjdk-devel.x86_64
+fi
