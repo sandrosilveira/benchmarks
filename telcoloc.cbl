@@ -7,10 +7,9 @@
        Input-Output Section.
         File-Control.
            Select InFile  Assign to
-                "c:\tmp\expon180.1e6".
-      *>        "C:\TELCO.TEST".
+                "expon180.1e6".
            Select OutFile  Assign to
-                "c:\tmp\TELCO.TXT"
+                "/tmp/TELCO.TXT"
                         Line Sequential.
        Data Division.
         File Section.
