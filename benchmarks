@@ -50,3 +50,7 @@ echo "--------------------------------------------------------------------------
 echo "Running 7za..."
 cd /tmp
 time 7za a zip.7z TELCO.TXT
+echo "-------------------------------------------------------------------------------------------"
+echo "Running Preproc..."
+cd /mnt/f/fontes
+time preproc srifor.cbl -msi -cpn -war -wes -vnp -is -as=/tmp/SRIFOR.LST
