@@ -2,6 +2,7 @@ cd ~
 mkdir benchmarks
 chmod 777 benchmarks
 cd benchmarks
+wget https://raw.githubusercontent.com/sandrosilveira/benchmarks/master/telco.cbl
 wget https://raw.githubusercontent.com/sandrosilveira/benchmarks/master/telcoloc.cbl
 wget https://raw.githubusercontent.com/sandrosilveira/benchmarks/master/telcolocData.7z
 wget https://raw.githubusercontent.com/sandrosilveira/benchmarks/master/jTelco.java
