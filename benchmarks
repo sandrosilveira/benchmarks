@@ -1,3 +1,10 @@
+install-gnucobol3
+install-ruby
+install-java8
+install-7zip
+install-cifs
+mountf
+
 cd ~
 mkdir benchmarks
 chmod 777 benchmarks
