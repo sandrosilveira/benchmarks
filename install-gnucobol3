@@ -1,3 +1,10 @@
+if ! [ -x "$(command -v make)" ]; then
+   if [ -f /etc/debian_version ]; then
+      apt install build-essential
+   else
+      dnf install @development-tools
+   fi
+fi
 if [ -f /etc/debian_version ]; then
    apt install libgmp-dev
    apt install libdb-dev
@@ -7,10 +14,6 @@ else
    yum install libdb-devel
    yum install ncurses-devel
 fi
-#TODO: Se não existe make no fedora/centos:
-#dnf install @development-tools
-#TODO: Se não existe make no ubuntu:
-#apt install build-essentials
 cd ~
 mkdir Downloads
 cd Downloads
@@ -22,6 +25,7 @@ cd gnucobol-3.0-rc1
 make
 make install
 make test
-#TODO:próxima linha só executar se já não estiver configurado!
-echo /usr/local/lib>> /etc/ld.so.conf.d/libc.conf
+if ! grep -q /usr/local/lib /etc/ld.so.conf.d/libc.conf; then
+   echo /usr/local/lib>> /etc/ld.so.conf.d/libc.conf
+fi
 ldconfig

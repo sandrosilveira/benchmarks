@@ -1,11 +1,11 @@
 cd /usr/local/bin
-wget https://raw.githubusercontent.com/sandrosilveira/benchmarks/master/install-gnucobol3
-wget https://raw.githubusercontent.com/sandrosilveira/benchmarks/master/install-ruby
-wget https://raw.githubusercontent.com/sandrosilveira/benchmarks/master/install-java8
-wget https://raw.githubusercontent.com/sandrosilveira/benchmarks/master/install-7zip
-wget https://raw.githubusercontent.com/sandrosilveira/benchmarks/master/install-cifs
-wget https://raw.githubusercontent.com/sandrosilveira/benchmarks/master/mountf
-wget https://raw.githubusercontent.com/sandrosilveira/benchmarks/master/preproc
+wget https://raw.githubusercontent.com/sandrosilveira/benchmarks/master/install-gnucobol3 -O install-gnucobol3
+wget https://raw.githubusercontent.com/sandrosilveira/benchmarks/master/install-ruby -O install-ruby
+wget https://raw.githubusercontent.com/sandrosilveira/benchmarks/master/install-java8 -O install-java8
+wget https://raw.githubusercontent.com/sandrosilveira/benchmarks/master/install-7zip -O install-7zip
+wget https://raw.githubusercontent.com/sandrosilveira/benchmarks/master/install-cifs -O install-cifs
+wget https://raw.githubusercontent.com/sandrosilveira/benchmarks/master/mountf -O mountf
+wget https://raw.githubusercontent.com/sandrosilveira/benchmarks/master/preproc -O preproc
 chmod 777 install* mountf preproc
 
 install-gnucobol3
@@ -19,12 +19,12 @@ cd ~
 mkdir benchmarks
 chmod 777 benchmarks
 cd benchmarks
-wget https://raw.githubusercontent.com/sandrosilveira/benchmarks/master/telco.cbl
-wget https://raw.githubusercontent.com/sandrosilveira/benchmarks/master/telcoloc.cbl
-wget https://raw.githubusercontent.com/sandrosilveira/benchmarks/master/telcolocData.7z
-wget https://raw.githubusercontent.com/sandrosilveira/benchmarks/master/jTelco.java
-wget https://raw.githubusercontent.com/sandrosilveira/benchmarks/master/jTelcoData.7z
-wget https://raw.githubusercontent.com/sandrosilveira/benchmarks/master/telco.rb
+wget https://raw.githubusercontent.com/sandrosilveira/benchmarks/master/telco.cbl -O telco.cbl
+wget https://raw.githubusercontent.com/sandrosilveira/benchmarks/master/telcoloc.cbl -O telcoloc.cbl
+wget https://raw.githubusercontent.com/sandrosilveira/benchmarks/master/telcolocData.7z -O telcolocData.7z
+wget https://raw.githubusercontent.com/sandrosilveira/benchmarks/master/jTelco.java -O jTelco.java
+wget https://raw.githubusercontent.com/sandrosilveira/benchmarks/master/jTelcoData.7z -O jTelcoData.7z
+wget https://raw.githubusercontent.com/sandrosilveira/benchmarks/master/telco.rb -O telco.rb
 7za x telcolocData.7z
 7za x jTelcoData.7z
 cobc -x -free telco.cbl
