@@ -7,6 +7,10 @@ else
    yum install libdb-devel
    yum install ncurses-devel
 fi
+#TODO: Se não existe make no fedora/centos:
+#dnf install @development-tools
+#TODO: Se não existe make no ubuntu:
+#apt install build-essentials
 cd ~
 mkdir Downloads
 cd Downloads
