@@ -22,5 +22,6 @@ cd gnucobol-3.0-rc1
 make
 make install
 make test
+#TODO:próxima linha só executar se já não estiver configurado!
 echo /usr/local/lib>> /etc/ld.so.conf.d/libc.conf
 ldconfig
