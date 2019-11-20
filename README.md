@@ -2,7 +2,7 @@
 Instructions:
 
 **Login as root:**<br>
-su
+su --login
 
 **Go to home directory:**<br>
 cd ~
