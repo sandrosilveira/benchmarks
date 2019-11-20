@@ -1,5 +1,5 @@
 if [ -f /etc/debian_version ]; then
-   apt install cifs-utils
+   apt install -y cifs-utils
 else
-   dnf install cifs-utils
+   dnf install -y cifs-utils
 fi

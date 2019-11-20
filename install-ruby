@@ -1,5 +1,5 @@
 if [ -f /etc/debian_version ]; then
-   apt install ruby
+   apt install -y ruby
 else
-   dnf install ruby
+   dnf install -y ruby
 fi

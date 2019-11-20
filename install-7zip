@@ -1,5 +1,5 @@
 if [ -f /etc/debian_version ]; then
-   apt install p7zip-full
+   apt install -y p7zip-full
 else
-   dnf install p7zip.x86_64
+   dnf install -y p7zip.x86_64
 fi

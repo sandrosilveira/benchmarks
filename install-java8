@@ -1,5 +1,5 @@
 if [ -f /etc/debian_version ]; then
-   apt install openjdk-8-jdk
+   apt install -y openjdk-8-jdk
 else
-   dnf install java-1.8.0-openjdk-devel.x86_64
+   dnf install -y java-1.8.0-openjdk-devel.x86_64
 fi
