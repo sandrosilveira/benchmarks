@@ -1,2 +1,2 @@
 unset _JAVA_OPTIONS
-java -Xverify:none -Xms256m -Xmx960m -cp /mnt/f/SIGER/20.10a/lib/ojdbc6.jar:/mnt/f/SIGER/20.10a/lib/JRIInterno.jar:/mnt/f/SIGER/20.10a/lib/JRIutil.jar:/mnt/f/SIGER/20.10a/lib/JRISiger.jar:/mnt/f/SIGER/20.10a/lib/JRILib.jar:/mnt/f/DIV/PreProc/dist/JRICobolPreProcessor165.jar br.com.rech.preproc.principal.CobolPreProcessor $*
+java -Xverify:none -Xms256m -Xmx960m -cp /mnt/f/SIGER/20.10a/lib/ojdbc6.jar:/mnt/f/SIGER/20.10a/lib/JRIInterno.jar:/mnt/f/SIGER/20.10a/lib/JRIutil.jar:/mnt/f/SIGER/20.10a/lib/JRISiger.jar:/mnt/f/SIGER/20.10a/lib/JRILib.jar:/mnt/f/DIV/PreProc/dist/JRICobolPreProcessor167.jar br.com.rech.preproc.principal.CobolPreProcessor $*
