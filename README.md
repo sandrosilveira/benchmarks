@@ -4,13 +4,9 @@ Instructions:
 **Login as root:**<br>
 su --login
 
-**Go to home directory:**<br>
-cd ~
-
-**Clone the repository**<br>
-git clone https://github.com/sandrosilveira/benchmarks.git
+**Download script**<br>
+curl https://raw.githubusercontent.com/sandrosilveira/benchmarks/master/benchmarks > /usr/local/bin/benchmarks
 
 **Run:**<br>
-cd benchmarks<br>
-./benchmarks
-
+chmod 777 /usr/local/bin/benchmarks
+benchmarks
