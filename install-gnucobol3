@@ -3,7 +3,8 @@ if ! [ -x "$(command -v make)" ]; then
    if [ -f /etc/debian_version ]; then
       apt install -y build-essential
    else
-      dnf install -y @development-tools
+      yum install -y gcc
+      yum install -y make
    fi
 fi
 if [ -f /etc/debian_version ]; then
