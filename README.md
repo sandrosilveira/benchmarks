@@ -5,7 +5,8 @@ Instructions:
 su --login
 
 **Download script**<br>
-curl https://raw.githubusercontent.com/sandrosilveira/benchmarks/master/benchmarks > benchmarks
+curl https://raw.githubusercontent.com/sandrosilveira/benchmarks/master/benchmarks > /usr/local/bin/benchmarks
 
 **Run:**<br>
-bash benchmarks
+chmod 777 /usr/local/bin/benchmarks
+benchmarks
