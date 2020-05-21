@@ -2,5 +2,6 @@
 if [ -f /etc/debian_version ]; then
    apt install -y p7zip-full
 else
+   yum install epel-release
    dnf install -y p7zip.x86_64
 fi

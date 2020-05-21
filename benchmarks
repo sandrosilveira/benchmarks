@@ -1,4 +1,15 @@
+#!/bin/bash
 cd /usr/local/bin
+
+if ! [ -x "$(command -v wget)" ]; then
+   echo "Instalando wget..."
+   if [ -f /etc/debian_version ]; then
+      apt install -y wget
+   else
+      dnf install -y wget
+   fi
+fi
+
 wget https://raw.githubusercontent.com/sandrosilveira/benchmarks/master/install-gnucobol3 -O install-gnucobol3
 wget https://raw.githubusercontent.com/sandrosilveira/benchmarks/master/install-ruby -O install-ruby
 wget https://raw.githubusercontent.com/sandrosilveira/benchmarks/master/install-java8 -O install-java8
