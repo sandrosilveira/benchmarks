@@ -8,5 +8,5 @@ su --login
 curl https://raw.githubusercontent.com/sandrosilveira/benchmarks/master/benchmarks > /usr/local/bin/benchmarks
 
 **Run:**<br>
-chmod 777 /usr/local/bin/benchmarks
+chmod 777 /usr/local/bin/benchmarks<br>
 benchmarks
