@@ -1,6 +1,10 @@
 #!/bin/bash
 cd /usr/local/bin
 
+if [ -f /etc/debian_version ]; then
+   apt-get update
+fi
+
 if ! [ -x "$(command -v wget)" ]; then
    echo "Instalando wget..."
    if [ -f /etc/debian_version ]; then
