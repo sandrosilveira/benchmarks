@@ -10,3 +10,7 @@ curl https://raw.githubusercontent.com/sandrosilveira/benchmarks/master/benchmar
 **Run:**<br>
 chmod 777 /usr/local/bin/benchmarks<br>
 benchmarks
+
+**Ou simplesmente:**<br>
+curl https://raw.githubusercontent.com/sandrosilveira/benchmarks/master/benchmarks | sudo bash -s
+
